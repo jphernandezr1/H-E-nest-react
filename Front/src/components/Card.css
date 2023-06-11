@@ -1,0 +1,35 @@
+.card-size {
+    width: 360px;
+    height: fit-content;
+    background-color:  rgb(30,30,30);
+    
+    border-color: white;
+}
+h1 {
+    color: black;
+}
+h2{
+    color: black;
+    font-size: 30px;
+}
+h3{
+    color: black;
+    font-size: 30px;
+
+}
+button {
+    width: 200px;
+    height: 70px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+
+}
+.container-1 {
+  display: flex;
+  justify-content: center;
+  vertical-align:middle;
+  align-items: center;
+  height: 75px; /* Set the desired height for the container */
+  margin: 10px;
+}

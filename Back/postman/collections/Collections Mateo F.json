@@ -1,0 +1,4727 @@
+{
+	"info": {
+		"_postman_id": "844edaaa-d8bc-4d86-96f2-263a317aa436",
+		"name": "HE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25936159"
+	},
+	"item": [
+		{
+			"name": "Rutina",
+			"item": [
+				{
+					"name": "Obtener token admin Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"token\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoRutinaT\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener token lectura Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"tokenL\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoEjercicioL\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener token lectura",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"username\": \"MajoForoL\",\r\n   \"password\": \"majo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/users/login",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Obtener token escritura Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"tokenE\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoEjercicioL\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener token escritura",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"username\": \"MajoForoE\",\r\n   \"password\": \"majo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/users/login",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Obtener token delete Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"tokenD\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoEjercicioD\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener token delete",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"username\": \"MajoForoD\",\r\n   \"password\": \"majo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/users/login",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()",
+									"pm.globals.set(\"rutinas_id\", data.id);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get rutinas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('Number of rutinas > ' + 0, function () {",
+									"   var data = pm.response.json()",
+									"   pm.expect(data.length).to.greaterThan(0)",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get rutinas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n    }\n\n    {\n    \"id\":\"2\",\n   \"nombre\": \"pecho\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}   \n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"nombre\": \"abdomen\",\n    \"infoAdicional\": \"hacer 5 reps\",\n    \"ejercicios:\": [],\n    \"recetas\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/?id=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get non existent rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get non existent rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": ""
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutinas3_id_1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutinas3_id_1}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update rutina",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 10 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Status code is 204\", function () {",
+									"   pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutinas3_id_1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutinas3_id_1}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/rutinas/?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ejercicio",
+			"item": [
+				{
+					"name": "Obtener token admin Copy 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"token\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoEjercicioT\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add ejercicio",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()",
+									"pm.globals.set(\"ejercicios_id\", data.id);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \"id\":\"97b45e2c-7edd-4744-8447-637b5c40a4e2\", \n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones\" : 20,\n   \"infoAdicional\": \"jajajaja\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add ejercicio",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get ejercicios",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('Number of ejercicios > ' + 0, function () {",
+									"   var data = pm.response.json()",
+									"   pm.expect(data.length).to.greaterThan(0)",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n     {\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    },\n     {\n    \"id\":\"2\",\n   \"tipo\": \"legpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    }   \n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicios/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get rutinas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    },\n     {\n    \"id\":\"2\",\n   \"tipo\": \"legpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    } \n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios/",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get ejercicio",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicios/?id=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get ejercicio",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    {\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get non existent ejercicio",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The ejercicioo with the given id was not found\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicios/97b45e2c-7edd-4744-8447-637b5c40a4e5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios",
+								"97b45e2c-7edd-4744-8447-637b5c40a4e5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get non existent ejercicio",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The museum with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios/?id=1000029",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1000029"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update ejercicios",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"id\": \"97b45e2c-7edd-4744-8447-637b5c40a4e2\",\n    \"tipo\": \"benchpress\",\n    \"duracion\": 330,\n    \"numRepeiciones\": 20,\n    \"infoAdicional\": \"jajajaja\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicio/{{ejercicio_id_1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicio",
+								"{{ejercicio_id_1}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update rutina",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios/?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete ejercicio",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"   pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/ejercicios/?id=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/ejercicios/?id=1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "id"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Rutina-Ejercicio",
+			"item": [
+				{
+					"name": "Obtener token admin Copy 4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"token\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoRutinaEjercicioT\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add ejercicio Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()",
+									"pm.globals.set(\"ejercicios_id\", data.id);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio_Rutina}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \"id\":\"97b45e2c-7edd-4744-8447-637b5c40a4e2\", \n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones\" : 20,\n   \"infoAdicional\": \"jajajaja\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add ejercicio",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add rutina Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()",
+									"pm.globals.set(\"rutinas_id\", data.id);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Ejercicio_Rutina}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add an ejercicio to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{ruina_id}}/ejercicios/{{ejercicio_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{ruina_id}}",
+								"ejercicios",
+								"{{ejercicio_id}}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an ejercicio to a receta",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"1\",\r\n   \"nombre\": \"abdomen\",\r\n   \"infoAdicional\": \"hacer 5 reps\",\r\n   \"ejercicios:\" : [\r\n       {\r\n    \"id\":\"1\",\r\n   \"tipo\": \"benchpress\",\r\n   \"duracion\": 10,\r\n   \"numRepeiciones:\" : 20,\r\n   \"infoAdicional\": \"\"\r\n    }\r\n],\r\n   \"recetas\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutinas4_id_1}}/ejercicios/{{rejercicio2_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutinas4_id_1}}",
+										"ejercicios",
+										"{{rejercicio2_id}}"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add an ejercicio to an invalid  rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutinaa with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios/{{ejercicio_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000",
+								"ejercicios",
+								"{{ejercicio_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an ejercicio to an invalid  rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The rutina with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/ejercicios/{{rejercicio_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ejercicios",
+										"{{rejercicio_id}}",
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add an invalid ejercicio to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina_id}}",
+								"ejercicios",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an invalid ejercicio to a rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The ejercicio with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id_1}}/ejercicios/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id_1}}",
+										"ejercicios",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an ejercicio of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{ruina_id}}/ejercicios/{{ejercicio_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{ruina_id}}",
+										"ejercicios",
+										"{{ejercicio_id_1}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an invalid ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an invalid ejercicio of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The ejercicio with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id}}",
+										"ejercicios",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an ejercicio to an invalid rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an ejercicio to an invalid rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios/{{ejercicio_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000",
+										"ejercicios",
+										"{{ejercicio_id_1}}"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an ejercicio non-associated to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 412\", function () {",
+									"   pm.response.to.have.status(412);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id is not associated to the rutina\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an ejercicio non-associated to a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 412,\n   \"message\": \"The ejercicio with the given id is not associated to the rutina\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id_1}}/ejercicios/{{ejercicio_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id_1}}",
+										"ejercicios",
+										"{{ejercicio_id}}"
+									]
+								}
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get all ejericio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all ejericio of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutinas_id}}//ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutinas_id}}",
+										"",
+										"ejercicios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get all ejercicio of an invalid rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000",
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all ejercicio of an invalid rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000",
+										"ejercicios"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n       \"id\": \"97b45e2c-7edd-4744-8447-637b5c40a4e2\",\r\n            \"tipo\": \"benchpress\",\r\n            \"duracion\": 30,\r\n            \"numRepeiciones\": 20,\r\n            \"infoAdicional\": \"jajajaja\"\r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update ejercicio of a rutina",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n   {\r\n       \"id\": \"{{ejercicio_id_2}}\"\r\n   }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id_1}}/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id_1}}",
+										"ejercicios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update invalid ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n            \"id\": \"00000000-0000-0000-0000-000000000000\"\r\n            \r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update invalid ejercicio of a rutina",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The ejercicio with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{receta_id}}/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{receta_id}}",
+										"ejercicios"
+									]
+								}
+							},
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update ejercicio of an invalid rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n       \"id\": \"{{rutina5_id}}\"\r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000",
+								"ejercicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update ejercicio of an invalid rutina",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The rutina with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000",
+										"ejercicios"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"   pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an ejercicio of a rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/{{ejercicio_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id}}",
+										"ejercicios",
+										"{{ejercicio_id}}"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an ejercicio of an invalid rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/00000000-0000-0000-0000-000000000000/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an ejercicio of an invalid rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The receta with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/{{ejercicio_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id}}",
+										"ejercicios",
+										"{{ejercicio_id}}"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an invalid ejercicio of a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ejercicio with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an invalid ejercicio of a rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The ingrediente with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id}}",
+										"ejercicios",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an ejercicio non-associated to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 412\", function () {",
+									"   pm.response.to.have.status(412);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The ruttina with the given id is not associated to the ejercicio\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Ejercicio_3}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/rutinas/{{rutina5_id}}/ejercicios/{{ejercicio5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas",
+								"{{rutina5_id}}",
+								"ejercicios",
+								"{{ejercicio5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an ejercicio non-associated to a rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 412,\r\n   \"message\": \"The ingrediente with the given id is not associated to the receta\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas/{{rutina_id}}/ejercicios/{{ejercicio_id_2}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas",
+										"{{rutina_id}}",
+										"ejercicios",
+										"{{ejercicio_id_2}}"
+									]
+								}
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Perfil-Rutina",
+			"item": [
+				{
+					"name": "Obtener token admin Copy 5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()\r",
+									"pm.globals.set(\"token\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"MateoRutinaPerfilT\",\r\n   \"password\": \"mate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Perfil Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"97b45e2c-7edd-4744-8447-637b5c40a4e1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"correo\":\"mdmd@mail.com\",\n   \"fechaDeNacimiento\":\"hooy\",\n   \"documento\":100101\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/perfil",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Perfil",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\"\n}"
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add rutina Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json()",
+									"pm.globals.set(\"rutinas_id\", data.id);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"rutinas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add an rutina to a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an ejercicio to a receta",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"1\",\r\n    \"nombre\":\"Pedro\",\r\n    \"correo\":\"pdro@mail.com\",\r\n    \"fechaDeNacimiento\":\"hoy\",\r\n    \"documento\": 102088,\r\n    \"publicacion\":[],\r\n    \"likes\":[],\r\n    \"metricas\":[],\r\n    \"rutinas\":[\r\n    {\r\n    \"id\":\"1\",\r\n   \"nombre\": \"abdomen\",\r\n   \"infoAdicional\": \"hacer 5 reps\",\r\n   \"ejercicios:\" : [],\r\n   \"recetas\": []\r\n   }\r\n    ]\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/{{rutinas_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"{{rutinas_id_1}}"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add an invalid rutina to a  perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfiles/{{perfil5_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfiles",
+								"{{perfil5_id}}",
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an invalid rutina to a  perfil",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The rutina with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add a rutina to an  invalid perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/00000000-0000-0000-0000-000000000000/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"00000000-0000-0000-0000-000000000000",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add an invalid ejercicio to a rutina",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The ejercicio with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/00000000-0000-0000-0000-000000000000/rutinas/{{rutina_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"00000000-0000-0000-0000-000000000000",
+										"rutinas",
+										"{{rutina_id_1}}"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an ejercicio of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"id\":\"1\",\n   \"nombre\": \"abdomen\",\n   \"infoAdicional\": \"hacer 5 reps\",\n   \"ejercicios:\" : [],\n   \"recetas\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/{{ruina_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"{{ruina_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an invalid rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/00000000-0000-0000-0000-000000000000/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"00000000-0000-0000-0000-000000000000",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an invalid perfil of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/00000000-0000-0000-0000-000000000000/rutinas/{{rutina_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"00000000-0000-0000-0000-000000000000",
+										"rutinas",
+										"{{rutina_id}}"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an rutina to an invalid perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an rutina to an invalid perfil",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The rutina with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id_1}}/rutinas/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id_1}}",
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get an perfil non-associated to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 412\", function () {",
+									"   pm.response.to.have.status(412);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id is not associated to the rutina\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get an ejercicio non-associated to a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 412,\n   \"message\": \"The ejercicio with the given id is not associated to the rutina\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/{{rutina_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"{{rutina_id_1}}"
+									]
+								}
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get all rutinas of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all ejericio of a rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[{\n    \"id\":\"1\",\n   \"tipo\": \"benchpress\",\n   \"duracion\": 10,\n   \"numRepeiciones:\" : 20,\n   \"infoAdicional\": \"\"\n}]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{rutina_id}}/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{rutina_id}}",
+										"rutinas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get all rutina of an invalid perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/00000000-0000-0000-0000-000000000000/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"00000000-0000-0000-0000-000000000000",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all ejercicio of an invalid rutina",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"statusCode\": 404,\n   \"message\": \"The perfil with the given id was not found\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/00000000-0000-0000-0000-000000000000/rutinas/{{rutinas_id_1}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"00000000-0000-0000-0000-000000000000",
+										"rutinas",
+										"{{rutinas_id_1}}"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"   pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update rutinas of a perfil",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n   {\r\n       \"id\": \"{{ejercicio_id_2}}\"\r\n   }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/ejercicios",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"ejercicios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update invalid rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n       \"id\": \"00000000-0000-0000-0000-000000000000\"\r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update invalid rutina of a perfil",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The rutina with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_1}}/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_1}}",
+										"rutinas"
+									]
+								}
+							},
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update rutina of an invalid perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n       \"id\": \"{{rutina5_id}}\"\r\n   }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/perfil/00000000-0000-0000-0000-000000000000/rutinas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"00000000-0000-0000-0000-000000000000",
+								"rutinas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update rutina of an invalid perfil",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The perfil with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/00000000-0000-0000-0000-000000000000/rutinas",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"00000000-0000-0000-0000-000000000000",
+										"rutinas"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"   pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an rutina of a perfil",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}//rutinas/{{rutina_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"",
+										"rutinas",
+										"{{rutina_id}}"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an rutina of an invalid perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an rutina of an invalid perfil",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The receta with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an invalid rutina of a perfil",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"   pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The rutina with the given id was not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an invalid rutinas of a perfil",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 404,\r\n   \"message\": \"The ingrediente with the given id was not found\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/00000000-0000-0000-0000-000000000000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"00000000-0000-0000-0000-000000000000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Delete an perfil non-associated to a rutina",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 412\", function () {",
+									"   pm.response.to.have.status(412);",
+									"});",
+									"",
+									"pm.test(\"Get expected error message\", function () {",
+									"   var data = pm.response.json();",
+									"   pm.expect(data.message).to.eql(\"The perfil with the given id is not associated to the rutina\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token_global_Rutina_Perfil}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/perfil/{{perfil5_id}}/rutinas/{{rutina5_id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"perfil",
+								"{{perfil5_id}}",
+								"rutinas",
+								"{{rutina5_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete an perfil non-associated to a rutina",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"statusCode\": 412,\r\n   \"message\": \"The ingrediente with the given id is not associated to the receta\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/perfiles/{{perfil_id}}/rutinas/{{rutina_id}}",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"perfiles",
+										"{{perfil_id}}",
+										"rutinas",
+										"{{rutina_id}}"
+									]
+								}
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "ingrediente_id",
+			"value": "\"1i\"",
+			"type": "string"
+		},
+		{
+			"key": "ingrediente_id_1",
+			"value": "\"2i\"",
+			"type": "string"
+		},
+		{
+			"key": "ingrediente_id_2",
+			"value": "\"3i\"",
+			"type": "string"
+		},
+		{
+			"key": "foro_id",
+			"value": "\"1\"",
+			"type": "string"
+		},
+		{
+			"key": "pulicaciones_id",
+			"value": "\"1\"",
+			"type": "string"
+		},
+		{
+			"key": "receta_id",
+			"value": "\"1r\"",
+			"type": "string"
+		},
+		{
+			"key": "receta_id_1",
+			"value": "\"2r\"",
+			"type": "string"
+		},
+		{
+			"key": "ejercicio5_id",
+			"value": "97b45e2c-7edd-4744-8447-637b5c40a4e2"
+		},
+		{
+			"key": "rutina5_id",
+			"value": "2dc71b7b-9b2b-4c23-8ca7-0645ba481b10"
+		},
+		{
+			"key": "perfil5_id",
+			"value": "97b45e2c-7edd-4744-8447-637b5c40a4e1"
+		},
+		{
+			"key": "token1_E",
+			"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvRWplcmNpY2lvTCIsInN1YiI6ODEsImlhdCI6MTY3OTU0Mzg4OSwiZXhwIjoxNjc5NTUxMDg5fQ.rS9A0Le1QqGHRwzKCmyCSOetrQGq361_ZK8nqO1_3jg\""
+		},
+		{
+			"key": "token_E",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvRWplcmNpY2lvTCIsInN1YiI6ODEsImlhdCI6MTY3OTU0Mzg4OSwiZXhwIjoxNjc5NTUxMDg5fQ.rS9A0Le1QqGHRwzKCmyCSOetrQGq361_ZK8nqO1_3jg"
+		},
+		{
+			"key": "token_global",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvUnV0aW5hVCIsInN1YiI6ODQsImlhdCI6MTY3OTU0NDA4NywiZXhwIjoxNjc5NTUxMjg3fQ.1sbe8ICD12PZpADcRYm2p84dSU3Ab6roSuO2DgNqYCw"
+		},
+		{
+			"key": "token_global_Ejercicio",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvRWplcmNpY2lvVCIsInN1YiI6ODAsImlhdCI6MTY3OTU0NDI5NywiZXhwIjoxNjc5NTUxNDk3fQ.4XN7FreDVX8ZzqlRGTgajZyfREwgg54eCDpkeYolzNo"
+		},
+		{
+			"key": "token_global_Ejercicio_Rutina",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvRWplcmNpY2lvVCIsInN1YiI6ODAsImlhdCI6MTY3OTU0NDQyNiwiZXhwIjoxNjc5NTUxNjI2fQ.b-v0rTcyJdyKkZwx95jIdwcuqaT9wCfaD82a5OPnoK4"
+		},
+		{
+			"key": "token_global_Rutina_Ejercicio",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvUnV0aW5hRWplcmNpY2lvVCIsInN1YiI6ODgsImlhdCI6MTY3OTU0NDUwMSwiZXhwIjoxNjc5NTUxNzAxfQ.9iQG4iENnf1sojpdjB3oIcRU1RkX-YsFJrJRv9wVXzg"
+		},
+		{
+			"key": "token_global_Rutina_Ejercicio_2",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvUnV0aW5hRWplcmNpY2lvVCIsInN1YiI6ODgsImlhdCI6MTY3OTU0NDU0NCwiZXhwIjoxNjc5NTUxNzQ0fQ.hP-EP_G2bWH4VtiPdmk6OL9HkVKLhObE_Gx5fyrFJ3o"
+		},
+		{
+			"key": "token_global_Rutina_Ejercicio_3",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1hdGVvUnV0aW5hRWplcmNpY2lvVCIsInN1YiI6ODgsImlhdCI6MTY3OTU0NDY4OCwiZXhwIjoxNjc5NTUxODg4fQ.Li-JnH8AOyGlwVsELztgxFMoIHMq2RKRbVKL_34ky98"
+		}
+	]
+}
